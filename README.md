@@ -12,11 +12,19 @@ git clone https://github.com/hernanrnieva/backend.git .
 
 ## Usage
 
+Install dependencies
+
+```bash
+npm install
+```
+
 Run
 
 ```bash
 npm start
 ```
+
+Start from the Home[http://localhost:8080/api/home] section
 
 ## Considerations
 
