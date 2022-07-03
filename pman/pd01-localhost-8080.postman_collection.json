@@ -2,7 +2,8 @@
 	"info": {
 		"_postman_id": "ec88ecea-cb66-418b-8fd6-3ed1cb0c6d17",
 		"name": "pd01/localhost:8080",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19823796"
 	},
 	"item": [
 		{
@@ -74,7 +75,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Ford Focus\",\r\n    \"description\" : \"Brilliant Blue Ford Focus in the mountains\",\r\n    \"code\": \"1130\",\r\n    \"thumbnail\": \"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/focus-st-edition-004-1629818858.jpg\",\r\n    \"price\": 1200.05,\r\n    \"stock\": 3\r\n}",
+					"raw": "{\r\n    \"name\": \"Headphones Beat\",\r\n    \"description\" : \"Headphones made by Beat\",\r\n    \"code\": \"1130\",\r\n    \"thumbnail\": \"https://http2.mlstatic.com/D_NQ_NP_754087-MLA46910444721_072021-V.jpg\",\r\n    \"price\": 1200.05,\r\n    \"stock\": 3\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -103,7 +104,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Ford Fiesta\",\r\n    \"description\" : \"Brilliant Blue Ford Fiesta in the mountains\",\r\n    \"code\": \"ABC02\",\r\n    \"thumbnail\": \"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/focus-st-edition-004-1629818858.jpg\",\r\n    \"price\": 2500.05,\r\n    \"stock\": 10\r\n}",
+					"raw": "{\r\n    \"name\": \"Headphones Logitech\",\r\n    \"description\" : \"Headphones made by Logitech\",\r\n    \"code\": \"1131\",\r\n    \"thumbnail\": \"https://cdn.shopify.com/s/files/1/0024/9803/5810/products/520548-Product-0-I-637606430900838285_800x800.jpg?v=1625010365\",\r\n    \"price\": 1240.05,\r\n    \"stock\": 5\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -132,7 +133,65 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Fiat Tipo\",\r\n    \"description\" : \"Brilliant Blue Fiat Tipo in the mountains\",\r\n    \"code\": \"XXC193\",\r\n    \"thumbnail\": \"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/focus-st-edition-004-1629818858.jpg\",\r\n    \"price\": 250.05,\r\n    \"stock\": 2\r\n}",
+					"raw": "{\r\n    \"name\": \"Headphones HyperX\",\r\n    \"description\" : \"Headphones made by HyperX\",\r\n    \"code\": \"1132\",\r\n    \"thumbnail\": \"https://media.kingston.com/hyperx/product/hx-product-headset-cloud-flight-ps-1-zm-lg.jpg\",\r\n    \"price\": 1340.05,\r\n    \"stock\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Product 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Headphones Sony\",\r\n    \"description\" : \"Headphones made by Sony\",\r\n    \"code\": \"1133\",\r\n    \"thumbnail\": \"https://www.sony.com.ar/image/1b6af17f802705b185c2832ff6861696?fmt=pjpeg&wid=660&bgcolor=F1F5F9&bgc=F1F5F9\",\r\n    \"price\": 2340.05,\r\n    \"stock\": 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Product 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Headphones Apple\",\r\n    \"description\" : \"Headphones made by Apple\",\r\n    \"code\": \"1134\",\r\n    \"thumbnail\": \"https://www.apple.com/newsroom/images/product/airpods/standard/Apple_AirPods-3rd-gen_hero_10182021_inline.jpg.slideshow-medium_2x.jpg\",\r\n    \"price\": 2440.05,\r\n    \"stock\": 17\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -517,7 +576,7 @@
 			"response": []
 		},
 		{
-			"name": "Get Cart 1",
+			"name": "Get Products in Cart 1",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -539,7 +598,7 @@
 			"response": []
 		},
 		{
-			"name": "Get Cart 2",
+			"name": "Get Products in Cart 2",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -596,6 +655,50 @@
 					"path": [
 						"api",
 						"cart",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Empty Cart 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cart/empty/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart",
+						"empty",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Empty Cart 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cart/empty/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart",
+						"empty",
 						"2"
 					]
 				}
