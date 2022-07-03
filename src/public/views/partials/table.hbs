@@ -1,0 +1,31 @@
+<div class="container mt-3">
+    {{#if products}}
+        <div class="table-responsive">
+            <table class="table table-dark">
+                <tr style="color: yellow;">
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Thumbnail</th>
+                    <th>Id</th>
+                </tr>
+                {{#each products}}
+                    <tr class="text-centered">
+                        <td>{{name}}</td>
+                        <td>${{price}}</td>
+                        <td><img src="{{thumbnail}}" alt="" width="60px"></td>
+                        <td>{{id}}</td>
+                    </tr>
+                {{/each}}
+            </table>
+            <h2 class="p-3" style="color: green; background-color: pink;">Specify the id of a product to add to cart:<h2>
+            <form action="/api/cart/{{user.cartId}}/products" method="post" autocomplete="off">
+                <label for="id" style="font-size: 18px;"><b>Id</b></label>
+                <input id="id" class="form-control mb-3" type="number" name="id" required/>
+
+                <button class="btn btn-success mt-3 mb-5">Add</button>
+            </form>
+        </div>
+    {{else}}
+        <h2 class="p-3" style="color: crimson; background-color: pink;">No data exists</h2>
+    {{/if}}
+</div>

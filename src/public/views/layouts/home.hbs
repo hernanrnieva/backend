@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> header}}
+<body class="bg-dark">
+    <div class="container mt-3">
+        <div class="rounded mb-3 pt-2 pb-1 pl-4 pr-4 bg-light bg-gradient d-flex justify-content-between">
+            <span><h2 class="mt-4" style="color: green">Welcome {{user.name}}!</h2></span>
+            <span><form class="mt-2" action="/api/logout" method="get">
+                <button class="btn btn-warning mt-3 mb-5">Logout</button>
+            </form></span>
+        </div>
+        {{> profile}}
+        <div class="jumbotron bg-light bg-gradient">
+            <h2 style="color: blue">Loaded products:</h2>
+            <br>
+            <div id="products">
+                {{> table}}
+            </div>
+        </div>
+        {{> cart}}
+    </div>
+</body>
+{{> footer}}

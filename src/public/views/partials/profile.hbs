@@ -1,0 +1,28 @@
+<div class="jumbotron bg-light bg-gradient">
+    <h2 style="color: blue">My data</h2>
+    <br>
+    <div id="profile">
+        <div class="container mt-3">
+            {{#if user}}
+                <div class="table-responsive">
+                    <table class="table table-dark">
+                        <tr style="color: yellow;">
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Picture</th>
+                        </tr>
+                        <tr class="text-centered">
+                            <td>{{user.name}}</td>
+                            <td>{{user.id}}</td>
+                            <td>{{user.address}}</td>
+                            <td><img src="{{user.picture}}" alt="" width="60px"></td>
+                        </tr>
+                    </table>
+                </div>
+            {{else}}
+                <h2 class="p-3" style="color: crimson; background-color: pink;">No user data received</h2>
+            {{/if}}
+        </div>
+    </div>
+</div>

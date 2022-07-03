@@ -1,0 +1,30 @@
+<div class="jumbotron bg-light bg-gradient">
+    <h2 style="color: blue">My cart</h2>
+    <br>
+    <div id="profile">
+        <div class="container mt-3">
+            {{#if cartProducts}}
+                <table class="table table-dark">
+                    <tr style="color: yellow;">
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Thumbnail</th>
+                    </tr>
+                    {{#each cartProducts}}
+                        <tr class="text-centered">
+                            <td>{{name}}</td>
+                            <td>${{price}}</td>
+                            <td><img src="{{thumbnail}}" alt="" width="60px"></td>
+                        </tr>
+                    {{/each}}
+                </table>
+                <form action="/api/cart/empty/{{user.cartId}}" method="post" autocomplete="off">
+
+                    <button class="btn btn-success mt-3 mb-5">Buy</button>
+                </form>
+            {{else}}
+                <h2 class="p-3" style="color: crimson; background-color: pink;">Cart is empty</h2>
+            {{/if}}
+        </div>
+    </div>
+</div>
