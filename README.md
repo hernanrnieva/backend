@@ -24,7 +24,7 @@ Run
 npm start
 ```
 
-Start from the Home[http://localhost:8080/api/home] section
+Start from the [Home](http://localhost:8080/api/home) section
 
 ## Considerations
 
